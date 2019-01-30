@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo 'Building..'
                  echo 'Test Kotesh..'
+                echo "M2_HOME=%M2_HOME%"
             }
         }
         stage('Test') {
