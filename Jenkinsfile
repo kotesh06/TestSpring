@@ -9,6 +9,11 @@ pipeline {
                 echo "M2_HOME=%M2_HOME%"
             }
         }
+         stage('Test') {
+            steps {
+                input('Do you want to proceed forward')
+            }
+        }
         stage('Test') {
             steps {
                 echo 'Testing..'
